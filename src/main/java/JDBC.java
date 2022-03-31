@@ -8,7 +8,7 @@ public class JDBC {
 	public static void main(String[] args) {
 		String url = "jdbc:mysql://localhost:3306/payroll_services";
 		String uname = "root";
-		String password = "Jia@21AZ";
+		String password = "Pass@12";
 
 		Connection connection = null;
 

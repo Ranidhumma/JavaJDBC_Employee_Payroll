@@ -32,7 +32,7 @@ public class EmployeePayrollDBService {
 	private Connection getConnection() throws SQLException {
 		String url = "jdbc:mysql://localhost:3306/payroll_services";
 		String uname = "root";
-		String password = "Jia@21AZ";
+		String password = "pass@12";
 		Connection connection = null;
 		System.out.println("Connecting to database " + url);
 		try {
