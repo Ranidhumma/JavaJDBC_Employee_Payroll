@@ -6,16 +6,15 @@ import java.util.Enumeration;
 public class JDBC {
 
 	public static void main(String[] args) {
-		String url = "jdbc:mysql://localhost:3306/payroll_service";
+		String url = "jdbc:mysql://localhost:3306/payroll_services";
 		String uname = "root";
-		String password = "Paas@12";
-		// String query = "select * from employee_payroll";
+		String password = "Jia@21AZ";
 
 		Connection connection = null;
 
 		/* to check if my driver is loaded or not */
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");// load the driver
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			System.out.println("Driver loaded!");
 		} catch (ClassNotFoundException e) {
 			throw new IllegalStateException("Cannot find the driver in the classpath!", e);
