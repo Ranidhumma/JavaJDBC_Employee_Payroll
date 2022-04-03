@@ -6,6 +6,8 @@ public class EmployeePayrollData {
 	public double salary;
 	public LocalDate startDate;
 
+	/* Created Constructor */
+
 	public EmployeePayrollData(int id, String name, double salary) {
 		this.id = id;
 		this.name = name;
@@ -17,6 +19,7 @@ public class EmployeePayrollData {
 		this.startDate = startDate;
 	}
 
+	/* Created to string Method to print data */
 	@Override
 	public String toString() {
 		return "EmployeePayrollData [id=" + id + ", name=" + name + ", salary=" + salary + ", startDate=" + startDate
