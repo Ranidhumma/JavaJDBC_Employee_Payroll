@@ -1,16 +1,17 @@
 import java.sql.Connection;
 import java.sql.Driver;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.Enumeration;
 
 public class JDBC {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SQLException, ClassNotFoundException {
 		String url = "jdbc:mysql://localhost:3306/payroll_services";
 		String uname = "root";
-		String password = "Jia@21AZ";
+		String password = "Pass@12";
 
-		Connection connection = null;
+		// Connection connection = null;
 
 		/* to check if my driver is loaded or not */
 		try {
@@ -24,7 +25,7 @@ public class JDBC {
 
 		try {
 			System.out.println("Connecting to database " + url);
-			connection = DriverManager.getConnection(url, uname, password);
+			Connection connection = DriverManager.getConnection(url, uname, password);
 			System.out.println("connection is successful!!!!!" + connection);
 		} catch (Exception e) {
 			e.printStackTrace();
